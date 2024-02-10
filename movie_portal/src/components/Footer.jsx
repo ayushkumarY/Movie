@@ -9,7 +9,7 @@ function Footer() {
           <h1 className="font-bold text-center text-2xl mt-3">M O V I E S</h1>
           <p className="text-center m-7">
             Address: Floor 11 & 12, G Block BKC, Bandra Kurla Complex, Bandra
-            East, Mumbai, Maharashtra 400051
+            East,New Mumbai, Maharashtra 400051
           </p>
           <div className="flex justify-around text-2xl">
             <i className="fa-brands fa-facebook hover:text-black hover:cursor-pointer"></i>
