@@ -20,19 +20,19 @@ function Navbar() {
         </div>
 
         <div className="flex flex-row font-mono items-center font-bold">
-          <span className="mx-5 h-7 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer ">
+          <span className="mx-5 h-8 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer ">
             Movies
           </span>
-          <span className="mx-5 h-7 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
+          <span className="mx-5 h-8 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
             Shows
           </span>
-          <span className="mx-5 h-7 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
+          <span className="mx-5 h-8 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
             Tickets
           </span>
-          <span className="mx-5 h-7 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
+          <span className="mx-5 h-8 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
             Favourite
           </span>
-          <span className="mx-5 h-7 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
+          <span className="mx-5 h-8 text-xl hover:border-b-4 hover:border-black hover:cursor-pointer">
             Trending
           </span>
         </div>

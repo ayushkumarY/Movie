@@ -36,7 +36,7 @@ function Movie() {
     }
   }
 
-  // --- filterData from movies ---;
+  // --- filterData from movies starts here ---;
   const filterDataFun = (year, type) => {
     year = year.trim();
     type = type.trim();
@@ -78,7 +78,7 @@ function Movie() {
       }
     }
   };
-  // filterData from movies
+  // filterData from movies ends here
 
   useEffect(() => {
     fetchApiData(API);
@@ -107,7 +107,7 @@ function Movie() {
             placeholder="Movie Name"
             value={searchQuery}
             onChange={handlesearch}
-            className="text-black rounded-sm h-[35px] w-[700px] px-2"
+            className="text-black rounded-sm h-[35px] w-[700px] px-2 focus:outline-none"
           />
         </div>
         {/* search bar ends */}
