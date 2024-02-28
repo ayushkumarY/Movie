@@ -42,7 +42,7 @@ function Movie() {
     type = type.trim();
     if (year !== "" && type !== "") {
       setMovieData(
-        movieData.filter((item) => {
+        filterdata.filter((item) => {
           return item?.Year === year && item?.Type === type;
         })
       );
@@ -59,7 +59,7 @@ function Movie() {
       }
     } else if (year !== "" && type === "") {
       setMovieData(
-        movieData.filter((item) => {
+        filterdata.filter((item) => {
           return item?.Year === year;
         })
       );
@@ -67,7 +67,7 @@ function Movie() {
       setNew(year);
     } else if (year === "" && type !== "") {
       setMovieData(
-        movieData.filter((item) => {
+        filterdata.filter((item) => {
           return item?.Type === type;
         })
       );
@@ -84,6 +84,7 @@ function Movie() {
     fetchApiData(API);
   }, []);
 
+  // Search bar filter starts here
   const handlesearch = (e) => {
     const searchText = e.target.value;
     setSearchQuery(searchText);
@@ -96,6 +97,7 @@ function Movie() {
       setMovieData(filterdata);
     }
   };
+  // Search bar filter starts here
 
   return (
     <div className="flex flex-col items-center bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900">
@@ -133,7 +135,7 @@ function Movie() {
       </div>
 
       {/* extra button starts here */}
-      <div className="flex w-full justify-start items-center bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 h-11">
+      <div className="flex w-full justify-start items-center h-11">
         {showtabyear === true ? (
           <div className="flex bg-white items-center mx-16 text-black font-mono px-2 mt-4 h-9 rounded-full hover:border-2 hover:border-red-600">
             <p className="text-xl ">{New}</p>
